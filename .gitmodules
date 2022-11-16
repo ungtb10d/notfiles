@@ -1,0 +1,18 @@
+[submodule "stderred"]
+	path = stderred
+	url = https://github.com/ungtb10d/stderred.git
+[submodule "macports-base"]
+	path = macports-base
+	url = https://github.com/ungtb10d/macports-base.git
+[submodule ".notfiles"]
+	path = .notfiles
+	url = https://github.com/ungtb10d/.notfiles.git
+[submodule "wingpanel-indicator-sys-monitor"]
+	path = wingpanel-indicator-sys-monitor
+	url = https://github.com/ungtb10d/wingpanel-indicator-sys-monitor.git
+[submodule "library_injector"]
+	path = library_injector
+	url = https://gist.github.com/ungtb10d/a70d44951cb72f82efee3317d80ac07f
+[submodule "swizzler"]
+	path = swizzler
+	url = https://gist.github.com/ungtb10d/ed701e3369639410b5d5303612964557

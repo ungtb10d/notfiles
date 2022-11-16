@@ -1,0 +1,37 @@
+[user]
+	name = Saagar Jha
+	email = saagar@ungtb10d.com
+[alias]
+	glog = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	git = !echo "You wrote \"git\" twice." >&2 && git
+	rb = "!f() { revision=$1; shift; git rbi HEAD~$revision "$@"; }; f"
+	try-pr = test-pr
+	rbi = rebase -i
+[status]
+	showUntrackedFiles = all
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[core]
+	excludesfile = /Users/ungtb10d/.gitignore
+	editor = nano
+	attributesfile = /Users/ungtb10d/.gitattributes
+[push]
+	followTags = true
+[merge]
+	conflictstyle = diff3
+[rerere]
+	enabled = true
+[diff "plist"]
+	textconv = plutil -convert xml1 -o -
+[pager]
+	log = git _diff-pager
+	show = git _diff-pager
+	diff = git _diff-pager
+[sendemail]
+	smtpEncryption = tls
+	smtpServer = smtp.gmail.com
+	smtpUser = ungtb10d28@gmail.com
+	smtpServerPort = 587
